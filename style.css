@@ -30,7 +30,7 @@ h2 {
 .wrapper {
     grid-column: 1/13;
     grid-template-columns: 60px repeat(12, 1fr) 60px;
-    grid-template-rows: repeat(10, minmax(75px, auto));
+    grid-template-rows: repeat(12, minmax(75px, auto));
     column-gap: 25px;
     row-gap: 20px;
     display: grid;
@@ -114,33 +114,92 @@ h2 {
     margin: 0;
 }
 
+/* deities homepage */
 .deitiesHome {
     background-color: white;
     border-radius: 20px;
     padding: 30px;
     grid-column: 3/13;
     grid-row: 8;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 20px;
 }
 
 .deityContainer {
-    margin-right: 30px;
-
+    grid-column: 1/8;
 }
 
 .deityContainer a {
   text-decoration: underline;
   color: #d89766;
-
 }
 
-.deityImg {
-    display: flex;
-
+.deityImg  {
+    grid-column: 8/13;
 }
 
-.deityImg img {
+.deityImg img{
     width: 100%;
-    object-fit: cover;
 }
+
+/* myths homepage */
+
+.mythsHome {
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    grid-column: 3/13;
+    grid-row: 9;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 20px;
+ }
+
+.mythsContainer {
+    grid-column: 1/8;
+}
+
+.mythsContainer a {
+  text-decoration: underline;
+  color: #d89766;
+}
+
+.mythsImg{
+    grid-column: 8/13;
+}
+
+.mythsImg img {
+    width: 100%;
+   
+} 
+
+/* inspirations homepage */
+.inspirationsHome {
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    grid-column: 3/13;
+    grid-row: 10;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 20px;
+ }
+
+.inspirationsContainer {
+    grid-column: 1/8;
+}
+
+.inspirationsContainer a {
+  text-decoration: underline;
+  color: #d89766;
+}
+
+.inspirationsImg{
+    grid-column: 8/13;
+}
+
+.inspirationsImg img {
+    width: 100%;
+   
+} 
