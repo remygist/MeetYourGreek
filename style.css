@@ -30,7 +30,7 @@ h2 {
 .wrapper {
     grid-column: 1/13;
     grid-template-columns: 60px repeat(12, 1fr) 60px;
-    grid-template-rows: repeat(12, minmax(75px, auto));
+    grid-template-rows: repeat(20, minmax(75px, auto));
     column-gap: 25px;
     row-gap: 20px;
     display: grid;
@@ -120,7 +120,7 @@ h2 {
     border-radius: 20px;
     padding: 30px;
     grid-column: 3/13;
-    grid-row: 8;
+    grid-row: 8/9;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     column-gap: 20px;
@@ -150,7 +150,7 @@ h2 {
     border-radius: 20px;
     padding: 30px;
     grid-column: 3/13;
-    grid-row: 9;
+    grid-row: 9/10;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     column-gap: 20px;
@@ -180,7 +180,7 @@ h2 {
     border-radius: 20px;
     padding: 30px;
     grid-column: 3/13;
-    grid-row: 10;
+    grid-row: 10/11;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     column-gap: 20px;
@@ -203,3 +203,90 @@ h2 {
     width: 100%;
    
 } 
+
+/* timeline homepage */
+.timelineHome {
+    grid-column: 3/13;
+    grid-row: 11/12;
+    display: grid;
+    grid-template-rows: repeat(8, 1fr);
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.timeline {
+    grid-row: 7;
+}
+
+.horizontal-line {
+    position: relative;
+    border-top: 2px solid #000; /* Adjust the color and thickness of the line */
+    width: 100%; /* Adjust the width of the line */
+}
+
+/* Common styles for all dots */
+.dots {
+    background-color: black;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.dots:nth-child(1) {
+    left: 10%; 
+}
+
+.dots:nth-child(2) {
+    left: 20%; 
+}
+
+.dots:nth-child(3) {
+    left: 30%; 
+}
+
+.dots:nth-child(4) {
+    left: 40%; 
+}
+
+.connection-up {
+    position: absolute;
+    height: 50px;
+    border-left: 2px solid #000; 
+}
+
+.connection-up:nth-child(1){
+    top: -50px; 
+    left: 50%; 
+}
+
+.connection-up:nth-child(2){
+    top: -50px;
+    left: 50%; 
+}
+
+
+.event-up {
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+.connection-down {
+    position: absolute;
+    height: 50px;
+    border-left: 2px solid #000;
+    left: 50%
+}
+
+.event-down {
+    position: absolute;
+    top: 60px; 
+    left: 50%; 
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
