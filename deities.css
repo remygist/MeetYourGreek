@@ -1,10 +1,11 @@
 body {
-    background-color: #EFEAE7;
+    background-color: #efebe8;
     /*#EFEAE7*/
     margin: 0;
     padding: 0;
     height: 200vh;
     color: #d89766;
+    
 }
 
 p {
@@ -33,13 +34,11 @@ h2 {
     grid-template-rows: repeat(20, minmax(75px, auto));
     column-gap: 25px;
     row-gap: 20px;
-    display: grid;
+    display: grid;border: 0.25px solid #d89766;
 }
 
 .navbar {
-    margin: 20px 60px;
-    background-color: #efebe8;
-    backdrop-filter: 10px;
+    margin: 20px 60px;    
 }
 
 .navbar a {
@@ -68,13 +67,20 @@ h2 {
 
 .sidebar{
     width: 25%;
-    border: 1px solid black;
     text-align: center;
+    background-color: #efebe8;
+    border: 0.25px solid #d89766;
+    border-top: 0px ;
+}
+
+.deityItem{
+    margin-top: 20px;
 }
 
 
 .deityItem:hover{
-    background-color: red;
+    background-color: #d89766;
+    color: white;
 }
 
 .deityContainer{

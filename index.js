@@ -2,6 +2,7 @@
 import Deities from "./Deities.js";
 
 const deitiesArray = [];
+const deitiesId = [];
 const pageContainer = document.querySelector(".deityContainer");
 const sidebarContainer = document.querySelector(".sidebar");
 
@@ -34,9 +35,11 @@ async function getData() {
 function showDeities() {
     //clear previous content
     sidebarContainer.innerHTML = "";
+    pageContainer.innerHTML = "";
     deitiesArray.forEach(function (deity) {
         sidebarContainer.insertAdjacentHTML("beforeend", deity.htmlSidebarData);
-    });
+        
+    });  pageContainer.insertAdjacentHTML("beforeend", deitiesArray[0].htmlContainerData);
     const selectedDeity = document.querySelectorAll(".deityItem");
     showDeitiesData(selectedDeity);
 }
@@ -47,7 +50,11 @@ function showDeitiesData(selectedDeity){
     selectedDeity.forEach((data) => {
         data.addEventListener("click", () => {
             console.log("Clicked deity:", data);
-            
+            const clickedDeityId = data.id;
+            const clickedDeity = deitiesArray.find(deity => deity.id == clickedDeityId)
+            console.log(clickedDeity);
+            pageContainer.innerHTML = "";
+            pageContainer.insertAdjacentHTML("beforeend", clickedDeity.htmlContainerData);
             
         });
     });
