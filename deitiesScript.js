@@ -7,7 +7,7 @@ const sidebarContainer = document.querySelector(".sidebar");
 
 async function getData() {
     try {
-        const response = await fetch("http://localhost:3000/getDeities");
+        const response = await fetch("https://web-2-course-project-jayu.onrender.com/getDeities");
         const data = await response.json();
 
         console.log(data);
