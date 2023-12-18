@@ -1,0 +1,105 @@
+body {
+    background-color: #efebe8;
+    /*#EFEAE7*/
+    margin: 0;
+    padding: 0;
+    color: #d89766;    
+}
+
+p {
+    font-family: "adobe-garamond-pro", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+    margin: 0;
+}
+
+h1 {
+    font-family: futura-pt, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+.navbar {
+    padding: 20px 60px;
+    border-bottom: 1px #d89766 solid;  
+}
+
+.navbar a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #d89766;
+    font-family: "futura-pt", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+}
+
+.navbar .title {
+    font-family: "lithos-pro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar{
+    width: fit-content;
+    min-width: 25%;
+    height: fit-content;
+    text-align: center;
+    background-color: #efebe8;
+    border: 0.25px solid #d89766;
+    border-top: 0px ;
+}
+
+.mythItem{
+    padding: 10px 0px;
+}
+
+.mythItem:hover{
+    background-color: #d89766;
+    color: white;
+}
+
+.mythContainer{
+    width: fit-content;
+    padding: 30px 40px;
+}
+
+.mythContainer:nth-child(2){
+    display: flex;
+    padding: 0;
+}
+
+.imgContainer {
+    width: fit-content;
+    max-width: 50%;
+    min-width: 45%;
+    margin: 40px 0 0 0;
+    text-align: center;
+}
+
+.imgContainer img {
+    min-width: 500px;
+    max-width: 640px;
+}
+
+
+
+
+
+
