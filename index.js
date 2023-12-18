@@ -2,11 +2,8 @@
 import Deities from "./Deities.js";
 
 const deitiesArray = [];
-const deitiesId = [];
 const pageContainer = document.querySelector(".deityContainer");
 const sidebarContainer = document.querySelector(".sidebar");
-
-
 
 async function getData() {
     try {
@@ -38,36 +35,35 @@ function showDeities() {
     pageContainer.innerHTML = "";
     deitiesArray.forEach(function (deity) {
         sidebarContainer.insertAdjacentHTML("beforeend", deity.htmlSidebarData);
-        
-    });  pageContainer.insertAdjacentHTML("beforeend", deitiesArray[0].htmlContainerData);
+    });
+    pageContainer.insertAdjacentHTML(
+        "beforeend",
+        deitiesArray[0].htmlContainerData
+    );
     const selectedDeity = document.querySelectorAll(".deityItem");
     showDeitiesData(selectedDeity);
 }
 
-function showDeitiesData(selectedDeity){
+function showDeitiesData(selectedDeity) {
     console.log(deitiesArray[0].htmlContainerData);
 
     selectedDeity.forEach((data) => {
         data.addEventListener("click", () => {
             console.log("Clicked deity:", data);
             const clickedDeityId = data.id;
-            const clickedDeity = deitiesArray.find(deity => deity.id == clickedDeityId)
+            const clickedDeity = deitiesArray.find(
+                (deity) => deity.id == clickedDeityId
+            );
             console.log(clickedDeity);
             pageContainer.innerHTML = "";
-            pageContainer.insertAdjacentHTML("beforeend", clickedDeity.htmlContainerData);
-            
+            pageContainer.insertAdjacentHTML(
+                "beforeend",
+                clickedDeity.htmlContainerData
+            );
         });
     });
-
 }
 
-getData(); 
+getData();
 console.log(deitiesArray);
 
-
-
-// let selectedDeity = document.querySelector(".deityItem");
-// selectedDeity.addEventListener("click", () => {
-//     console.log(selectedDeity.id);
-// })
-// console.log(selectedDeity);

@@ -3,9 +3,7 @@ body {
     /*#EFEAE7*/
     margin: 0;
     padding: 0;
-    height: 200vh;
-    color: #d89766;
-    
+    color: #d89766;    
 }
 
 p {
@@ -28,17 +26,9 @@ h2 {
     margin: 0;
 }
 
-.wrapper {
-    grid-column: 1/13;
-    grid-template-columns: 60px repeat(12, 1fr) 60px;
-    grid-template-rows: repeat(20, minmax(75px, auto));
-    column-gap: 25px;
-    row-gap: 20px;
-    display: grid;border: 0.25px solid #d89766;
-}
-
 .navbar {
-    margin: 20px 60px;    
+    padding: 20px 60px;
+    border-bottom: 1px #d89766 solid;  
 }
 
 .navbar a {
@@ -63,10 +53,13 @@ h2 {
     height: 100%;
     background-color: white;
     display: flex;
+    min-height: 100vh;
 }
 
 .sidebar{
-    width: 25%;
+    width: fit-content;
+    min-width: 25%;
+    height: fit-content;
     text-align: center;
     background-color: #efebe8;
     border: 0.25px solid #d89766;
@@ -74,7 +67,7 @@ h2 {
 }
 
 .deityItem{
-    margin-top: 20px;
+    padding: 10px 0px;
 }
 
 
@@ -84,6 +77,30 @@ h2 {
 }
 
 .deityContainer{
-    width: 75%;
-    padding: 20px;
+    width: fit-content;
+    padding: 30px 40px;
 }
+
+.deityContainer:nth-child(2){
+    display: flex;
+    padding: 0;
+}
+
+.imgContainer {
+    width: fit-content;
+    max-width: 50%;
+    min-width: 45%;
+    margin: 40px 0 0 0;
+    text-align: center;
+}
+
+.imgContainer img {
+    min-width: 500px;
+    max-width: 640px;
+}
+
+
+
+
+
+

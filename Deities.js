@@ -14,7 +14,9 @@ class Deities{
         <h1>${this.name}, ${this.title}</h1>
                 <p>
                     ${this.description}
-                </p></div>
+                </p></div><div class="imgContainer">
+                <img src="${this.image}" />
+            </div>
         `
     }
 
