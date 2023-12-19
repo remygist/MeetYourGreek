@@ -221,11 +221,10 @@ h2 {
 
 .horizontal-line {
     position: relative;
-    border-top: 2px solid #000; /* Adjust the color and thickness of the line */
-    width: 100%; /* Adjust the width of the line */
+    border-top: 2px solid #000; 
+    width: 100%; 
 }
 
-/* Common styles for all dots */
 .dots {
     background-color: black;
     border-radius: 100%;

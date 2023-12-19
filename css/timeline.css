@@ -1,0 +1,178 @@
+body {
+    background-color: #efebe8;
+    /*#EFEAE7*/
+    margin: 0;
+    padding: 0;
+    color: #d89766;    
+}
+
+p {
+    font-family: "adobe-garamond-pro", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+    margin: 0;
+}
+
+h1 {
+    font-family: futura-pt, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+.navbar {
+    padding: 20px 60px;  
+}
+
+.navbar a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #d89766;
+    font-family: "futura-pt", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+}
+
+.navbar .title {
+    font-family: "lithos-pro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+}
+
+.timelineHome {
+    display: grid;
+    grid-template-rows: repeat(8, 1fr);
+    padding: 20px;
+    border-radius: 20px;
+    min-height: 100vh;
+}
+
+.timeline {
+    grid-column: 1/13;
+    grid-row: 4;
+}
+
+.horizontal-line {
+    position: relative;
+    border-top: 2px solid #000;
+    width: 100%;
+}
+
+.dots {
+    background-color: black;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.dots:nth-child(1) {
+    left: 7%; 
+}
+
+.dots:nth-child(2) {
+    left: 14%; 
+}
+
+.dots:nth-child(3) {
+    left: 21%; 
+}
+
+.dots:nth-child(4) {
+    left: 28%; 
+}
+
+.dots:nth-child(5) {
+    left: 35%; 
+}
+
+.dots:nth-child(6) {
+    left: 42%; 
+}
+
+.dots:nth-child(7) {
+    left: 49%; 
+}
+
+.dots:nth-child(8) {
+    left: 56%; 
+}
+
+.dots:nth-child(9) {
+    left: 63%; 
+}
+
+.dots:nth-child(10) {
+    left: 70%; 
+}
+
+.dots:nth-child(11) {
+    left: 77%; 
+}
+
+.dots:nth-child(12) {
+    left: 84%; 
+}
+
+.dots:nth-child(13) {
+    left: 91%; 
+}
+
+.connection-up {
+    position: absolute;
+    height: 50px;
+    border-left: 2px solid #000; 
+}
+
+.connection-up{
+    top: -50px; 
+    left: 50%; 
+}
+
+.event-up {
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+.connection-down {
+    position: absolute;
+    height: 50px;
+    border-left: 2px solid #000;
+    left: 50%
+}
+
+.event-down {
+    position: absolute;
+    top: 60px; 
+    left: 50%; 
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+.dots:nth-child(9) .connection-down {
+    height: 90px;
+}
+
+.dots:nth-child(11) .connection-down {
+    height: 90px;
+}
+
+.dots:nth-child(9) .connection-down .event-down {
+    top: 100px;
+}
+
+.dots:nth-child(11) .connection-down .event-down {
+    top: 100px;
+}
