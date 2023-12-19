@@ -35,11 +35,16 @@ function showTimeline() {
     timelineArray.forEach(function (timeline) {
         sidebarContainer.insertAdjacentHTML("beforeend", timeline.htmlSidebarData);
     });
+
+    const selectedEventId = getSelectedEvent();
+    let selectedTimeline = timelineArray[selectedEventId]
+
     pageContainer.insertAdjacentHTML(
         "beforeend",
-        timelineArray[0].htmlContainerData
+        selectedTimeline ? selectedTimeline.htmlContainerData : timelineArray[0].htmlContainerData
     );
-    const selectedTimeline = document.querySelectorAll(".timelineItem");
+
+    selectedTimeline = document.querySelectorAll(".timelineItem");
     showTimelineData(selectedTimeline);
 }
 
@@ -53,6 +58,7 @@ function showTimelineData(selectedTimeline) {
             const clickedTimeline = timelineArray.find(
                 (timeline) => timeline.id == clickedTimelineId
             );
+
             console.log(clickedTimeline);
             pageContainer.innerHTML = "";
             pageContainer.insertAdjacentHTML(
@@ -61,6 +67,11 @@ function showTimelineData(selectedTimeline) {
             );
         });
     });
+}
+
+function getSelectedEvent(){
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get('eventId')
 }
 
 getData();
