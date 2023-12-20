@@ -72,7 +72,7 @@ document.querySelector("#inspirationsForm").addEventListener("submit", function 
 
     console.log(inspirationSuggest);
 
-    getData("https://web-2-course-project-jayu.onrender.com/suggestDeity", "POST", inspirationSuggest).then(data => {
+    getData("https://web-2-course-project-jayu.onrender.com/suggestInspiration", "POST", inspirationSuggest).then(data => {
         console.log(data);
     })
 })
