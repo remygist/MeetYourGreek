@@ -7,7 +7,9 @@ const sidebarContainer = document.querySelector(".sidebar");
 
 async function getData() {
     try {
-        const response = await fetch("https://web-2-course-project-jayu.onrender.com/getTimeline");
+        const response = await fetch(
+            "https://web-2-course-project-jayu.onrender.com/getTimeline"
+        );
         const data = await response.json();
 
         console.log(data);
@@ -33,15 +35,20 @@ function showTimeline() {
     sidebarContainer.innerHTML = "";
     pageContainer.innerHTML = "";
     timelineArray.forEach(function (timeline) {
-        sidebarContainer.insertAdjacentHTML("beforeend", timeline.htmlSidebarData);
+        sidebarContainer.insertAdjacentHTML(
+            "beforeend",
+            timeline.htmlSidebarData
+        );
     });
 
     const selectedEventId = getSelectedEvent();
-    let selectedTimeline = timelineArray[selectedEventId]
+    let selectedTimeline = timelineArray[selectedEventId];
 
     pageContainer.insertAdjacentHTML(
         "beforeend",
-        selectedTimeline ? selectedTimeline.htmlContainerData : timelineArray[0].htmlContainerData
+        selectedTimeline
+            ? selectedTimeline.htmlContainerData
+            : timelineArray[0].htmlContainerData
     );
 
     selectedTimeline = document.querySelectorAll(".timelineItem");
@@ -69,9 +76,9 @@ function showTimelineData(selectedTimeline) {
     });
 }
 
-function getSelectedEvent(){
+function getSelectedEvent() {
     const urlParams = new URLSearchParams(window.location.search);
-    return urlParams.get('eventId')
+    return urlParams.get("eventId");
 }
 
 getData();

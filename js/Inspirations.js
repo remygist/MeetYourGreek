@@ -1,15 +1,14 @@
-export default
-class Inspirations{
-    constructor(id,title,description,imageThen,imageToday){
+export default class Inspirations {
+    constructor(id, title, description, imageThen, imageToday) {
         this.id = id;
         this.title = title;
         this.description = description;
         this.imageThen = imageThen;
-        this.imageToday = imageToday
+        this.imageToday = imageToday;
     }
 
-    get htmlContainerData(){
-        return`     
+    get htmlContainerData() {
+        return `     
         <div class="inspirationContainer">
         <h1>${this.title}</h1>
                 <p>
@@ -20,12 +19,12 @@ class Inspirations{
                 <h1>Today<h1>
                 <img src="${this.imageToday}" />
             </div>
-        `
+        `;
     }
 
-    get htmlSidebarData(){
-        return`
+    get htmlSidebarData() {
+        return `
         <div class="inspirationItem" id="${this.id}"><h1>${this.title}</h1></div>
-        `
+        `;
     }
 }

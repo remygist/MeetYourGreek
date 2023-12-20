@@ -1,14 +1,13 @@
-export default
-class Myths{
-    constructor(id,title,description,image){
+export default class Myths {
+    constructor(id, title, description, image) {
         this.id = id;
         this.title = title;
         this.description = description;
         this.image = image;
     }
 
-    get htmlContainerData(){
-        return`     
+    get htmlContainerData() {
+        return `     
         <div class="mythContainer">
         <h1>${this.title}</h1>
                 <p>
@@ -16,12 +15,12 @@ class Myths{
                 </p></div><div class="imgContainer">
                 <img src="${this.image}" />
             </div>
-        `
+        `;
     }
 
-    get htmlSidebarData(){
-        return`
+    get htmlSidebarData() {
+        return `
         <div class="mythItem" id="${this.id}"><h1>${this.title}</h1></div>
-        `
+        `;
     }
 }

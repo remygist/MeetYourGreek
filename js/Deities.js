@@ -1,6 +1,5 @@
-export default
-class Deities{
-    constructor(id,name,title,description,image){
+export default class Deities {
+    constructor(id, name, title, description, image) {
         this.id = id;
         this.name = name;
         this.title = title;
@@ -8,8 +7,8 @@ class Deities{
         this.image = image;
     }
 
-    get htmlContainerData(){
-        return`     
+    get htmlContainerData() {
+        return `     
         <div class="deityContainer">
         <h1>${this.name}, ${this.title}</h1>
                 <p>
@@ -17,12 +16,12 @@ class Deities{
                 </p></div><div class="imgContainer">
                 <img src="${this.image}" />
             </div>
-        `
+        `;
     }
 
-    get htmlSidebarData(){
-        return`
+    get htmlSidebarData() {
+        return `
         <div class="deityItem" id="${this.id}"><h1>${this.name}, ${this.title}</h1>  </div>
-        `
+        `;
     }
 }

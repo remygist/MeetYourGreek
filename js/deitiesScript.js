@@ -7,7 +7,9 @@ const sidebarContainer = document.querySelector(".sidebar");
 
 async function getData() {
     try {
-        const response = await fetch("https://web-2-course-project-jayu.onrender.com/getDeities");
+        const response = await fetch(
+            "https://web-2-course-project-jayu.onrender.com/getDeities"
+        );
         const data = await response.json();
 
         console.log(data);
@@ -66,4 +68,3 @@ function showDeitiesData(selectedDeity) {
 
 getData();
 console.log(deitiesArray);
-

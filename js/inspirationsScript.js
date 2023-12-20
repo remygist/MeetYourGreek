@@ -7,7 +7,9 @@ const sidebarContainer = document.querySelector(".sidebar");
 
 async function getData() {
     try {
-        const response = await fetch("https://web-2-course-project-jayu.onrender.com/getInspirations");
+        const response = await fetch(
+            "https://web-2-course-project-jayu.onrender.com/getInspirations"
+        );
         const data = await response.json();
 
         console.log(data);
@@ -34,7 +36,10 @@ function showInspirations() {
     sidebarContainer.innerHTML = "";
     pageContainer.innerHTML = "";
     inspirationsArray.forEach(function (inspiration) {
-        sidebarContainer.insertAdjacentHTML("beforeend", inspiration.htmlSidebarData);
+        sidebarContainer.insertAdjacentHTML(
+            "beforeend",
+            inspiration.htmlSidebarData
+        );
     });
     pageContainer.insertAdjacentHTML(
         "beforeend",
