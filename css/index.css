@@ -3,7 +3,7 @@ body {
     /*#EFEAE7*/
     margin: 0;
     padding: 0;
-    height: 200vh;
+    height: fit-content;
     color: #d89766;
 }
 
@@ -30,7 +30,7 @@ h2 {
 .wrapper {
     grid-column: 1/13;
     grid-template-columns: 60px repeat(12, 1fr) 60px;
-    grid-template-rows: repeat(20, minmax(75px, auto));
+    grid-template-rows: repeat(13, minmax(75px, auto));
     column-gap: 25px;
     row-gap: 20px;
     display: grid;
@@ -310,4 +310,8 @@ button:hover{
     left: 50%; 
     transform: translateX(-50%);
     white-space: nowrap;
+}
+
+.event-down a{
+    color: inherit;
 }

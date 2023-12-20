@@ -26,6 +26,12 @@ document.querySelector("#inputForm").addEventListener("submit", function (event)
 
     getData("https://web-2-course-project-jayu.onrender.com/updateProfile", "PUT", passwordChange).then(data => {
         console.log(data);
+
+        if (data.status === "Succes") {
+            alert(data.message)
+        } else {
+            alert(data.message)
+        }
     })
 
 
@@ -44,6 +50,15 @@ document.querySelector("#deitiesForm").addEventListener("submit", function (even
 
     getData("https://web-2-course-project-jayu.onrender.com/suggestDeity", "POST", deitySuggest).then(data => {
         console.log(data);
+
+        if (data.status === "Saved") {
+            alert(data.message)
+            document.querySelector("#nameDeity").value = "";
+            document.querySelector("#titleDeity").value = "";
+            document.querySelector("#descriptionDeity").value = "";
+        } else {
+            alert(data.message)
+        }
     })
 })
 
@@ -59,6 +74,14 @@ document.querySelector("#mythsForm").addEventListener("submit", function (event)
 
     getData("https://web-2-course-project-jayu.onrender.com/suggestMyth", "POST", mythSuggest).then(data => {
         console.log(data);
+
+        if (data.status === "Saved") {
+            alert(data.message)
+            document.querySelector("#titleMyth").value = "";
+            document.querySelector("#descriptionMyth").value = "";
+        } else {
+            alert(data.message)
+        }
     })
 })
 
@@ -74,6 +97,13 @@ document.querySelector("#inspirationsForm").addEventListener("submit", function 
 
     getData("https://web-2-course-project-jayu.onrender.com/suggestInspiration", "POST", inspirationSuggest).then(data => {
         console.log(data);
+        if (data.status === "Saved") {
+            alert(data.message);
+            document.querySelector("#titleInspirations").value = "";
+            document.querySelector("#descriptionInspirations").value = "";
+        } else {
+            alert(data.message);
+        }
     })
 })
 
@@ -87,7 +117,10 @@ document.querySelector(".deleteBtn").addEventListener("click", (event) => {
         console.log(data);
 
         if (data.status === "Success") {
+            alert(data.message);
             window.location.href = "index.html";
+        } else {
+            alert(data.message);
         }
     })
 })

@@ -16,8 +16,11 @@ document.querySelector("#inputForm").addEventListener("submit", function (event)
 
         // If login is successful, store the username in local storage and navigate to profile.html
         if (data.status === "Authentication succesfull") {
+            alert(data.message)
             localStorage.setItem('username', user.username);
             window.location.href = 'profile.html';
+        } else {
+            alert(data.message)
         }
     });
 });

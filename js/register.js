@@ -15,6 +15,7 @@ document.querySelector("#inputForm").addEventListener("submit", function (event)
     if (user.password == user.passwordConfirm) {
        getData("https://web-2-course-project-jayu.onrender.com/register", "POST", user).then(data => {
         alert("Succesfully registered")
+        window.location.href = "login.html"
        })
     } else {
         alert("Passwords do not match");
