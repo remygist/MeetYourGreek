@@ -1,7 +1,7 @@
 "use strict"
 
 document.querySelector("#inputForm").addEventListener("submit", function (event) {
-    event.preventDefault();
+    
 
     let user = {}
     user.username = document.querySelector("#username").value;

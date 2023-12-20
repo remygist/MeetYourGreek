@@ -1,0 +1,183 @@
+body {
+    background-color: #efebe8;
+    /*#EFEAE7*/
+    margin: 0;
+    padding: 0;
+    color: #d89766;    
+}
+
+p {
+    font-family: "adobe-garamond-pro", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+    margin: 0;
+}
+
+h1 {
+    font-family: futura-pt, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+.navbar {
+    padding: 20px 60px; 
+    justify-content: center; 
+}
+
+.navbar a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #d89766;
+    font-family: "futura-pt", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+}
+
+.navbar .title {
+    font-family: "lithos-pro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+}
+
+.sectionWrapper{
+    display: flex;
+}
+
+section{
+    text-align: center;
+    width: 25%;
+    padding-top: 10px;
+    margin: 40px 10%;
+    background-color: white;
+    border-radius: 25px;
+    height: fit-content;
+}
+
+
+#inputForm{
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#inputForm p{
+    font-family: "adobe-garamond-pro", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: #d89766;
+}
+
+#username, #password, #newPassword, .loginBtn{
+    border: #d89766 1px solid;
+    padding: 8px;
+    border-radius: 5px;
+    color: #d89766;
+    background-color: white;
+    width: 80%;
+    font-size: 20px;
+}
+
+
+.loginBtn{
+    font-family: "futura-pt", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    margin: 0 auto 10px;
+    background-color: #d89766;
+    color: white;
+    width: 84%;
+}
+
+.loginBtn:hover{
+    background-color: white;
+    color: #d89766;
+}
+
+.forms{
+    text-align: center;
+    width: 25%;
+    padding-top: 10px;
+    margin: 40px 10%;
+    background-color: white;
+    border-radius: 25px; 
+}
+
+.forms p{
+    margin:  0px auto;
+}
+
+#suggestionSelector{
+    border: #d89766 1px solid;
+    padding: 8px;
+    border-radius: 5px;
+    color: #d89766;
+    background-color: white;
+    font-size: 20px;
+}
+
+#deitiesForm, #mythsForm, #inspirationsForm{
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#deitiesForm p, #mythsForm p, #inspirationsForm p{
+    font-family: "adobe-garamond-pro", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: #d89766;
+}
+
+#nameDeity, #titleDeity, #descriptionDeity, #titleMyth, #descriptionMyth, #titleInspirations, #descriptionInspirations{
+    border: #d89766 1px solid;
+    padding: 8px;
+    border-radius: 5px;
+    color: #d89766;
+    background-color: white;
+    width: 80%;
+    font-size: 20px;
+}
+
+
+.formBtn{
+    border: #d89766 1px solid;
+    padding: 8px;
+    border-radius: 5px;
+    font-family: "futura-pt", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    margin: 0 auto 10px;
+    background-color: #d89766;
+    color: white;
+    width: 84%;
+}
+
+.formBtn:hover{
+    background-color: white;
+    color: #d89766; 
+}
+
+
+#mythsContent, #inspirationsContent{
+    display: none;
+}
+
