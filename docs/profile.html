@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/profile.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/mmp2ifw.css" />
+    <script src="./profile.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <a class="title" href="index.html">Meet Your Greek</a>
+        <a href="deities.html">DEITIES</a>
+        <a href="myths.html">MYTHS</a>
+        <a href="inspirations.html">INSPIRATIONS</a>
+        <a href="timeline.html">TIMELINE</a>
+    </div>
+    <div class="sectionWrapper">
+        <section>
+            <h1>
+                Profile Page
+            </h1>
+            <p>Change password?</p>
+            <form id="inputForm">
+                <label for="password">
+                    <p>Old Password:</p>
+                </label>
+                <input type="password" id="password" /> <br />
+                <label for="newPassword">
+                    <p>New Password:</p>
+                </label>
+                <input type="password" id="newPassword" /> <br />
+                <input class="loginBtn" value="Update" type="submit" />
+            </form>
+
+            <a href="index.html" class="deleteBtn">Delete Account</a>
+        </section>
+
+        <div class="forms">
+            <h1>
+                Suggestions
+            </h1>
+            <p>By filling this form you can send suggestions to update informations.</p>
+            <label for="suggestionSelector">
+                <p>Choose a subject</p>
+            </label>
+            <select id="suggestionSelector" onchange="showPage()">
+                <option value="deities">deities</option>
+                <option value="myths">myths</option>
+                <option value="inspirations">inspirations</option>
+            </select>
+
+            <div id="content">
+                <div id="deitiesContent">
+                    <form id="deitiesForm">
+                        <label for="nameDeity">
+                            <p>Name of Deity:</p>
+                        </label>
+                        <input type="text" id="nameDeity" />
+                        <br />
+                        <label for="titleDeity">
+                            <p>Title:</p>
+                        </label>
+                        <input type="text" id="titleDeity" /> <br />
+                        <label for="descriptionDeity">
+                            <p>Description:</p>
+                        </label>
+                        <input type="text" id="descriptionDeity" /> <br />
+                        <input class="formBtn" value="Send" type="submit" />
+                    </form>
+                </div>
+                <div id="mythsContent">
+                    <form id="mythsForm">
+                        <label for="titleMyth">
+                            <p>Title of Myth:</p>
+                        </label>
+                        <input type="text" id="titleMyth" /> <br />
+                        <label for="descriptionMyth">
+                            <p>Description:</p>
+                        </label>
+                        <input type="text" id="descriptionMyth" /> <br />
+                        <input class="formBtn" value="Send" type="submit" />
+                    </form>
+                </div>
+                <div id="inspirationsContent">
+                    <form id="inspirationsForm">
+                        <label for="titleInspirations">
+                            <p>Title of Inspiration:</p>
+                        </label>
+                        <input type="text" id="titleInspirations" /> <br />
+                        <label for="descriptionInspirations">
+                            <p>Description:</p>
+                        </label>
+                        <input type="text" id="descriptionInspirations" /> <br />
+                        <input class="formBtn" value="Send" type="submit" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
