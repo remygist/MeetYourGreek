@@ -2,7 +2,7 @@ body {
     background-color: #efebe8;
     margin: 0;
     padding: 0;
-    color: #d89766;    
+    color: #d89766;
 }
 
 p {
@@ -26,8 +26,8 @@ h2 {
 }
 
 .navbar {
-    padding: 20px 60px; 
-    justify-content: center; 
+    padding: 20px 60px;
+    justify-content: center;
 }
 
 .navbar a {
@@ -47,11 +47,11 @@ h2 {
     font-size: 35px;
 }
 
-.sectionWrapper{
+.sectionWrapper {
     display: flex;
 }
 
-section{
+section {
     text-align: center;
     width: 25%;
     padding-top: 10px;
@@ -63,7 +63,7 @@ section{
 }
 
 
-#inputForm{
+#inputForm {
     display: flex;
     align-content: center;
     flex-wrap: wrap;
@@ -72,7 +72,7 @@ section{
     align-items: flex-start;
 }
 
-#inputForm p{
+#inputForm p {
     font-family: "adobe-garamond-pro", serif;
     font-weight: 400;
     font-style: normal;
@@ -80,7 +80,10 @@ section{
     color: #d89766;
 }
 
-#username, #password, #newPassword, .loginBtn{
+#username,
+#password,
+#newPassword,
+.loginBtn {
     border: #d89766 1px solid;
     padding: 8px;
     border-radius: 5px;
@@ -91,7 +94,7 @@ section{
 }
 
 
-.loginBtn{
+.loginBtn {
     font-family: "futura-pt", serif;
     font-weight: 400;
     font-style: normal;
@@ -102,12 +105,12 @@ section{
     width: 50%;
 }
 
-.loginBtn:hover{
+.loginBtn:hover {
     background-color: white;
     color: #d89766;
 }
 
-.deleteBtn{
+.deleteBtn {
     border: #d89766 1px solid;
     padding: 8px;
     border-radius: 5px;
@@ -118,25 +121,25 @@ section{
     text-decoration: none;
 }
 
-.deleteBtn:hover{
+.deleteBtn:hover {
     background-color: red;
-    color: white; 
+    color: white;
 }
 
-.forms{
+.forms {
     text-align: center;
     width: 25%;
     padding-top: 10px;
     margin: 40px 10%;
     background-color: white;
-    border-radius: 25px; 
+    border-radius: 25px;
 }
 
-.forms p{
-    margin:  0px auto;
+.forms p {
+    margin: 0px auto;
 }
 
-#suggestionSelector{
+#suggestionSelector {
     border: #d89766 1px solid;
     padding: 8px;
     border-radius: 5px;
@@ -145,7 +148,9 @@ section{
     font-size: 20px;
 }
 
-#deitiesForm, #mythsForm, #inspirationsForm{
+#deitiesForm,
+#mythsForm,
+#inspirationsForm {
     display: flex;
     align-content: center;
     flex-wrap: wrap;
@@ -154,7 +159,9 @@ section{
     align-items: flex-start;
 }
 
-#deitiesForm p, #mythsForm p, #inspirationsForm p{
+#deitiesForm p,
+#mythsForm p,
+#inspirationsForm p {
     font-family: "adobe-garamond-pro", serif;
     font-weight: 400;
     font-style: normal;
@@ -162,7 +169,13 @@ section{
     color: #d89766;
 }
 
-#nameDeity, #titleDeity, #descriptionDeity, #titleMyth, #descriptionMyth, #titleInspirations, #descriptionInspirations{
+#nameDeity,
+#titleDeity,
+#descriptionDeity,
+#titleMyth,
+#descriptionMyth,
+#titleInspirations,
+#descriptionInspirations {
     border: #d89766 1px solid;
     padding: 8px;
     border-radius: 5px;
@@ -173,7 +186,7 @@ section{
 }
 
 
-.formBtn{
+.formBtn {
     border: #d89766 1px solid;
     padding: 8px;
     border-radius: 5px;
@@ -187,13 +200,13 @@ section{
     width: 84%;
 }
 
-.formBtn:hover{
+.formBtn:hover {
     background-color: white;
-    color: #d89766; 
+    color: #d89766;
 }
 
 
-#mythsContent, #inspirationsContent{
+#mythsContent,
+#inspirationsContent {
     display: none;
 }
-

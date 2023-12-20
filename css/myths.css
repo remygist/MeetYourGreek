@@ -2,7 +2,7 @@ body {
     background-color: #efebe8;
     margin: 0;
     padding: 0;
-    color: #d89766;    
+    color: #d89766;
 }
 
 p {
@@ -27,7 +27,7 @@ h2 {
 
 .navbar {
     padding: 20px 60px;
-    border-bottom: 1px #d89766 solid;  
+    border-bottom: 1px #d89766 solid;
 }
 
 .navbar a {
@@ -47,7 +47,7 @@ h2 {
     font-size: 35px;
 }
 
-#button{
+#button {
     float: right;
 }
 
@@ -64,12 +64,12 @@ button {
     width: fit-content;
 }
 
-button:hover{
+button:hover {
     background-color: #d89766;
     color: #efebe8;
 }
 
-.wrapper{
+.wrapper {
     width: 100%;
     height: 100%;
     background-color: white;
@@ -77,31 +77,31 @@ button:hover{
     min-height: 100vh;
 }
 
-.sidebar{
+.sidebar {
     width: fit-content;
     min-width: 25%;
     height: fit-content;
     text-align: center;
     background-color: #efebe8;
     border: 0.25px solid #d89766;
-    border-top: 0px ;
+    border-top: 0px;
 }
 
-.mythItem{
+.mythItem {
     padding: 10px 0px;
 }
 
-.mythItem:hover{
+.mythItem:hover {
     background-color: #d89766;
     color: white;
 }
 
-.mythContainer{
+.mythContainer {
     width: fit-content;
     padding: 30px 40px;
 }
 
-.mythContainer:nth-child(2){
+.mythContainer:nth-child(2) {
     display: flex;
     padding: 0;
 }
@@ -118,9 +118,3 @@ button:hover{
     min-width: 500px;
     max-width: 640px;
 }
-
-
-
-
-
-

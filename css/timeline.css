@@ -2,7 +2,7 @@ body {
     background-color: #efebe8;
     margin: 0;
     padding: 0;
-    color: #d89766;    
+    color: #d89766;
 }
 
 p {
@@ -26,8 +26,8 @@ h2 {
 }
 
 .navbar {
-    padding: 20px 60px; 
-    justify-content: center; 
+    padding: 20px 60px;
+    justify-content: center;
 }
 
 .navbar a {
@@ -47,7 +47,7 @@ h2 {
     font-size: 35px;
 }
 
-#button{
+#button {
     float: right;
 }
 
@@ -64,12 +64,14 @@ button {
     width: fit-content;
 }
 
-button:hover{
+button:hover {
     background-color: #d89766;
     color: #efebe8;
 }
 
-.navbar a, .navbar .title, button {
+.navbar a,
+.navbar .title,
+button {
     vertical-align: middle;
 }
 
@@ -102,66 +104,66 @@ button:hover{
 }
 
 .dots:nth-child(1) {
-    left: 7%; 
+    left: 7%;
 }
 
 .dots:nth-child(2) {
-    left: 14%; 
+    left: 14%;
 }
 
 .dots:nth-child(3) {
-    left: 21%; 
+    left: 21%;
 }
 
 .dots:nth-child(4) {
-    left: 28%; 
+    left: 28%;
 }
 
 .dots:nth-child(5) {
-    left: 35%; 
+    left: 35%;
 }
 
 .dots:nth-child(6) {
-    left: 42%; 
+    left: 42%;
 }
 
 .dots:nth-child(7) {
-    left: 49%; 
+    left: 49%;
 }
 
 .dots:nth-child(8) {
-    left: 56%; 
+    left: 56%;
 }
 
 .dots:nth-child(9) {
-    left: 63%; 
+    left: 63%;
 }
 
 .dots:nth-child(10) {
-    left: 70%; 
+    left: 70%;
 }
 
 .dots:nth-child(11) {
-    left: 77%; 
+    left: 77%;
 }
 
 .dots:nth-child(12) {
-    left: 84%; 
+    left: 84%;
 }
 
 .dots:nth-child(13) {
-    left: 91%; 
+    left: 91%;
 }
 
 .connection-up {
     position: absolute;
     height: 50px;
-    border-left: 2px solid #000; 
+    border-left: 2px solid #000;
 }
 
-.connection-up{
-    top: -50px; 
-    left: 50%; 
+.connection-up {
+    top: -50px;
+    left: 50%;
 }
 
 .event-up {
@@ -181,8 +183,8 @@ button:hover{
 
 .event-down {
     position: absolute;
-    top: 60px; 
-    left: 50%; 
+    top: 60px;
+    left: 50%;
     transform: translateX(-50%);
     white-space: nowrap;
 }

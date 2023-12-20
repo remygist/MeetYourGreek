@@ -58,7 +58,7 @@ h2 {
     font-size: 35px;
 }
 
-#button{
+#button {
     float: right;
 }
 
@@ -75,7 +75,7 @@ button {
     width: fit-content;
 }
 
-button:hover{
+button:hover {
     background-color: #d89766;
     color: #efebe8;
 }
@@ -152,15 +152,15 @@ button:hover{
 }
 
 .deityContainer a {
-  text-decoration: underline;
-  color: #d89766;
+    text-decoration: underline;
+    color: #d89766;
 }
 
-.deityImg  {
+.deityImg {
     grid-column: 8/13;
 }
 
-.deityImg img{
+.deityImg img {
     width: 100%;
 }
 
@@ -173,25 +173,25 @@ button:hover{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     column-gap: 20px;
- }
+}
 
 .mythsContainer {
     grid-column: 1/8;
 }
 
 .mythsContainer a {
-  text-decoration: underline;
-  color: #d89766;
+    text-decoration: underline;
+    color: #d89766;
 }
 
-.mythsImg{
+.mythsImg {
     grid-column: 8/13;
 }
 
 .mythsImg img {
     width: 100%;
-   
-} 
+
+}
 
 .inspirationsHome {
     background-color: white;
@@ -202,25 +202,25 @@ button:hover{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     column-gap: 20px;
- }
+}
 
 .inspirationsContainer {
     grid-column: 1/8;
 }
 
 .inspirationsContainer a {
-  text-decoration: underline;
-  color: #d89766;
+    text-decoration: underline;
+    color: #d89766;
 }
 
-.inspirationsImg{
+.inspirationsImg {
     grid-column: 8/13;
 }
 
 .inspirationsImg img {
     width: 100%;
-   
-} 
+
+}
 
 .timelineHome {
     grid-column: 3/13;
@@ -238,8 +238,8 @@ button:hover{
 
 .horizontal-line {
     position: relative;
-    border-top: 2px solid #000; 
-    width: 100%; 
+    border-top: 2px solid #000;
+    width: 100%;
 }
 
 .dots {
@@ -252,35 +252,35 @@ button:hover{
 }
 
 .dots:nth-child(1) {
-    left: 10%; 
+    left: 10%;
 }
 
 .dots:nth-child(2) {
-    left: 20%; 
+    left: 20%;
 }
 
 .dots:nth-child(3) {
-    left: 30%; 
+    left: 30%;
 }
 
 .dots:nth-child(4) {
-    left: 40%; 
+    left: 40%;
 }
 
 .connection-up {
     position: absolute;
     height: 50px;
-    border-left: 2px solid #000; 
+    border-left: 2px solid #000;
 }
 
-.connection-up:nth-child(1){
-    top: -50px; 
-    left: 50%; 
-}
-
-.connection-up:nth-child(2){
+.connection-up:nth-child(1) {
     top: -50px;
-    left: 50%; 
+    left: 50%;
+}
+
+.connection-up:nth-child(2) {
+    top: -50px;
+    left: 50%;
 }
 
 .event-up {
@@ -300,12 +300,12 @@ button:hover{
 
 .event-down {
     position: absolute;
-    top: 60px; 
-    left: 50%; 
+    top: 60px;
+    left: 50%;
     transform: translateX(-50%);
     white-space: nowrap;
 }
 
-.event-down a{
+.event-down a {
     color: inherit;
 }
