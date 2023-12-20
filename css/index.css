@@ -59,6 +59,28 @@ h2 {
     font-size: 35px;
 }
 
+#button{
+    float: right;
+}
+
+button {
+    background-color: transparent;
+    border: #d89766 1px solid;
+    border-radius: 25px;
+    padding: 2px 8px;
+    color: #d89766;
+    font-family: "futura-pt", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+    width: fit-content;
+}
+
+button:hover{
+    background-color: #d89766;
+    color: #efebe8;
+}
+
 
 .container {
     grid-column: 1/15;
