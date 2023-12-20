@@ -1,6 +1,5 @@
 body {
     background-color: #EFEAE7;
-    /*#EFEAE7*/
     margin: 0;
     padding: 0;
     height: fit-content;
@@ -165,8 +164,6 @@ button:hover{
     width: 100%;
 }
 
-/* myths homepage */
-
 .mythsHome {
     background-color: white;
     border-radius: 20px;
@@ -196,7 +193,6 @@ button:hover{
    
 } 
 
-/* inspirations homepage */
 .inspirationsHome {
     background-color: white;
     border-radius: 20px;
@@ -226,7 +222,6 @@ button:hover{
    
 } 
 
-/* timeline homepage */
 .timelineHome {
     grid-column: 3/13;
     grid-row: 11/12;
@@ -287,7 +282,6 @@ button:hover{
     top: -50px;
     left: 50%; 
 }
-
 
 .event-up {
     position: absolute;
