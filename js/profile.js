@@ -77,6 +77,21 @@ document.querySelector("#inspirationsForm").addEventListener("submit", function 
     })
 })
 
+//delete account
+document.querySelector(".deleteBtn").addEventListener("click", (event) => {
+    event.preventDefault();
+    let account = {}
+    account.username = usernameFromStorage;
+
+    getData("https://web-2-course-project-jayu.onrender.com/deleteUser", "DELETE", account).then(data => {
+        console.log(data);
+
+        if (data.status === "Success") {
+            window.location.href = "index.html";
+        }
+    })
+})
+
 async function getData(url, method, data) {
     let resp = await fetch(url, {
         method: method,
