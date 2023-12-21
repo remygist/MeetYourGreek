@@ -26,14 +26,14 @@ webpack.config.js\
 
 
 ## Used command
-"$npm init -y"\
-"$npm install webpack webpack-cli"\
-"$npx webpack"
+"npm init -y"\
+"npm install webpack webpack-cli"\
+"npx webpack"
 
 
 ## How to host
 To host this project you need to host the docs folder. It contains everything you need to let the website work correctly. \
-If the code is changed, don't forget to run "$npx webpack" in order to rewrite the Javascript files.
+If the code is changed, don't forget to run "npx webpack" in order to rewrite the Javascript files.
 
 
 ## How to test
