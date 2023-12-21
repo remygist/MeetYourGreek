@@ -1,4 +1,4 @@
-# Name
+## Name
 Web-2 Course Project - Meet Your Greek
 
 
