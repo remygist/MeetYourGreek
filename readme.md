@@ -11,12 +11,16 @@ Lastly, a user-system has been integrated in order to be able to send suggestion
 ## Structure
 docs-css:\
  This folder contains all the stylesheets for the different pages of the website.\
+ \
 docs-images:\
  This folder contains all the images used on the website. The images has been distributed in different folders depending on what page they are for.\
-docs\
+ \
+docs:\
  In here we can find all the HTML pages and their according Javascript files. All the Javascript files have been rewritten using the webpack module.\
-src\
+ \
+src:\
  This folder contains all the original Javascript files.\
+ \
 webpack.config.js\
  This file is made to rewrite the original Javascript files with webpack.
 
