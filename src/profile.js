@@ -1,8 +1,11 @@
 "use strict";
 const usernameFromStorage = localStorage.getItem("username");
 console.log(usernameFromStorage);
-function showPage() {
-    const selectedPage = document.getElementById("suggestionSelector").value;
+
+const suggestionSelector = document.querySelector(".suggestionSelector");
+
+suggestionSelector.addEventListener("change", () => {
+    const selectedPage = suggestionSelector.value;
     console.log(selectedPage);
 
     document.getElementById("deitiesContent").style.display = "none";
@@ -10,7 +13,9 @@ function showPage() {
     document.getElementById("inspirationsContent").style.display = "none";
 
     document.getElementById(selectedPage + "Content").style.display = "block";
-}
+});
+
+
 
 //change password
 document
