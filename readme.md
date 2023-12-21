@@ -6,7 +6,7 @@ Web-2 Course Project - Meet Your Greek
 My project is about greek mythology. On this website you can look up information about deities and myths from the greek mythology.\
 Additionally, the inspirations page will show things that exists today, that are inspired from the greek mythology. Next to that,\
 a timeline of the greek mythology is included, which shows the different ages and events of the greek mythology.\
-Lastly, a user-system has been integrated in order to be able to send suggestions about new deities, myths or inspirations.\
+Lastly, a user-system has been integrated in order to be able to send suggestions about new deities, myths or inspirations.
 
 ## Structure
 docs-css:\
