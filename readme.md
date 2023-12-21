@@ -24,7 +24,7 @@ webpack.config.js\
 ## Used command
 "$npm init -y"\
 "$npm install webpack webpack-cli"\
-"$npx webpack"\
+"$npx webpack"
 
 
 ## How to host
