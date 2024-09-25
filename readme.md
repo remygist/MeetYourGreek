@@ -41,3 +41,9 @@ Normally, everything that needs to be tested works on the website.\
 There is a possibility to create an account on the website itself. \
 Once registered, you should be able to login into the website.
 
+## Sources
+
+- [ChatGPT](https://chatgpt.com/) - Used for troubleshooting errors and guidance on component implementation.
+- Other Students
+- Exercises/Lessons
+
