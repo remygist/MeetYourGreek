@@ -1,12 +1,14 @@
-## Name
-Web-2 Course Project - Meet Your Greek
+## Meet Your Greek
+Meet Your Greek is an engaging website dedicated to Greek mythology. It provides a wealth of information about deities and myths, offering an in-depth look at the fascinating stories and characters of this ancient tradition.
 
+The platform features:
 
-## What is my project about?
-My project is about greek mythology. On this website you can look up information about deities and myths from the greek mythology.\
-Additionally, the inspirations page will show things that exists today, that are inspired from the greek mythology. Next to that,\
-a timeline of the greek mythology is included, which shows the different ages and events of the greek mythology.\
-Lastly, a user-system has been integrated in order to be able to send suggestions about new deities, myths or inspirations.
+- Deities and Myths: Explore detailed profiles of gods, goddesses, and legendary tales.
+- Modern Inspirations: Discover how Greek mythology has influenced modern culture, from literature to architecture and beyond.
+- Timeline of Greek Mythology: Follow a chronological journey through the ages, highlighting key events and periods in Greek mythology.
+- User Suggestions: Share your insights and contribute by suggesting new deities, myths, or inspirations to expand the database.
+  
+Meet Your Greek combines timeless mythology with modern interactivity, creating an immersive experience for enthusiasts and newcomers alike.
 
 ## Structure
 docs-css:\
