@@ -1,4 +1,4 @@
-## Meet Your Greek
+# Meet Your Greek
 Meet Your Greek is an engaging website dedicated to Greek mythology. It provides a wealth of information about deities and myths, offering an in-depth look at the fascinating stories and characters of this ancient tradition.
 
 The platform features:
